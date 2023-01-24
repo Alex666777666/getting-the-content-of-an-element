@@ -1,10 +1,10 @@
-export const getTitle = title => {
-  const titleElement = document.querySelectorAll('.title')
-  console.dir(titleElement.textContent)
-  return titleElement.textContent
-}
+export const getTitle = (title) => {
+  const titleElement = document.querySelectorAll('.title').textContent;
+  console.dir(titleElement);
+  return titleElement;
+};
 
-getTitle()
+getTitle();
 
 export const getDescription = about => {
   const aboutElement = document.querySelectorAll('.about')
