@@ -1,4 +1,4 @@
-const getTitle = title => {
+export const getTitle = title => {
   const titleElement = document.querySelectorAll('.title')
   console.dir(titleElement.textContent)
   return titleElement.textContent
@@ -6,7 +6,7 @@ const getTitle = title => {
 
 getTitle()
 
-const getDescription = about => {
+export const getDescription = about => {
   const aboutElement = document.querySelectorAll('.about')
   console.dir(aboutElement.innerText)
   return aboutElement.innerText
@@ -14,7 +14,7 @@ const getDescription = about => {
 
 getDescription()
 
-const getPlans = plans => {
+export const getPlans = plans => {
   const plansElement = document.querySelectorAll('.plans')
   console.dir(plansElement.innerHTML)
   return plansElement.innerHTML
@@ -22,7 +22,7 @@ const getPlans = plans => {
 
 getPlans()
 
-const getGoal = goal => {
+export const getGoal = goal => {
   const goalElement = document.querySelectorAll('.goal')
   console.dir(goalElement.outerHTML)
   return goalElement.outerHTML
